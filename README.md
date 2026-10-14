@@ -6,7 +6,7 @@ A project optimizing the search for special Matrices called Hadamard Matrices us
 
 # 10/14/26
 
-Today, using Apio sim, I'm going to write the Verilog to check if 2 Hadamard vectors are orthogonal.
+Today, using Apio sim: [Repo for Virtual Apio Toolchain](https://github.com/DougTownsend/apio/tree/main), I'm going to write the Verilog to check if 2 Hadamard vectors are orthogonal.
 
 Since hadamard vectors are only +- 1, H1 * H2 = 0 is an equivalent statment to thier hamming distance being dim/2
 
