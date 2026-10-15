@@ -1,5 +1,5 @@
 module hadamard #(
-    parameter WIDTH = 4
+    parameter WIDTH = 8
   ) (
   input wire clk,
   input wire [WIDTH-1:0] vector_a,

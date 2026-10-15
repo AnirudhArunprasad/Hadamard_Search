@@ -8,6 +8,8 @@
 
 [*]
 hadamard_tb.clk
-hadamard_tb.hamming_dist[3:0]
-hadamard_tb.vector_a[3:0]
-hadamard_tb.vector_b[3:0]
+hadamard_tb.expected[31:0]
+hadamard_tb.hamming_dist[7:0]
+hadamard_tb.vector_a[7:0]
+hadamard_tb.vector_b[7:0]
+hadamard_tb.WIDTH
