@@ -1,0 +1,75 @@
+$date
+	Thu Oct 15 00:24:26 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module hadamard_tb $end
+$var wire 4 ! hamming_dist [3:0] $end
+$var reg 1 " clk $end
+$var reg 4 # vector_a [3:0] $end
+$var reg 4 $ vector_b [3:0] $end
+$scope module dut $end
+$var wire 1 " clk $end
+$var wire 4 % temp [3:0] $end
+$var wire 4 & vector_a [3:0] $end
+$var wire 4 ' vector_b [3:0] $end
+$var wire 4 ( sum [3:0] $end
+$var reg 4 ) hamming_dist [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx )
+b0 (
+b0 '
+b0 &
+b0 %
+b0 $
+b0 #
+0"
+bx !
+$end
+#5
+b0 !
+b0 )
+1"
+#10
+b1 (
+b1 %
+0"
+b1 $
+b1 '
+#15
+b1 !
+b1 )
+1"
+#20
+b10 (
+b11 %
+0"
+b11 $
+b11 '
+#25
+b10 !
+b10 )
+1"
+#30
+b100 (
+b1111 %
+0"
+b1111 $
+b1111 '
+#35
+b100 !
+b100 )
+1"
+#40
+0"
