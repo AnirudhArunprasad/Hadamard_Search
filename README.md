@@ -15,3 +15,8 @@ Therefore, if H1 xor H2 = 1/2 of the dimension of H1 and H2, then exactly half o
 
 This makes the actual Verilog very simple.
 
+# 10/15/26
+
+I cleaned up some more of the basic hamming distance calculations today, but the general idea is starting to take shape.
+
+It's clear that there is something quite intrinsic and fundamental about the value 4 when it comes to Hadamard matricies, so the goal is going to be to "chunk" each vector by seperating it into blocks of 4. Those blocks can then be tested against the other vectors, and that can power a minimization or optimization function, while the actual comparisons can be constant lookup stored in ROM, or Flash. (I haven't fully worked out the architecture yet)
