@@ -20,3 +20,7 @@ This makes the actual Verilog very simple.
 I cleaned up some more of the basic hamming distance calculations today, but the general idea is starting to take shape.
 
 It's clear that there is something quite intrinsic and fundamental about the value 4 when it comes to Hadamard matricies, so the goal is going to be to "chunk" each vector by seperating it into blocks of 4. Those blocks can then be tested against the other vectors, and that can power a minimization or optimization function, while the actual comparisons can be constant lookup stored in ROM, or Flash. (I haven't fully worked out the architecture yet)
+
+# 10/17/26
+
+Today, I'm thinking that I start working on the python golden model for the overall flow. As of today, the current architecture I was initially thinking of splitting the search into mutually orthogonal vector searches. The problem is that you can have a large set of orthogonal vectors, and they may not have a constructible Hadamard solution. I was initially thinking of chunking all the vectors into blocks of 4, and precomputing all possible interactions in ROM, and then trying to find additions of interaction vectors which would have an appropriate hamming distance. The unfortunate thing is that there is a possibility for backtracking, which makes me no longer confident that this is the best approach. I will attempt to find a better one before creating the golden model, but I don't mind building a worse prototype before a better one after some iterations.
