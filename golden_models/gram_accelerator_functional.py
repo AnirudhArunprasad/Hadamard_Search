@@ -43,9 +43,10 @@ def gram_accelerator(A):
 
   return [1, "success", gram]
 
-A = np.array([[1,0], [1,1]])
+if __name__ == "__main__":
+  A = np.array([[1,0], [1,1]])
 
-gram = gram_accelerator(A)
-print(gram[0])
-print(gram[1])
-print(gram[2])
+  gram = gram_accelerator(A)
+  print(gram[0])
+  print(gram[1])
+  print(gram[2])

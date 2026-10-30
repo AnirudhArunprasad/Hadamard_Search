@@ -11,10 +11,10 @@ def gram_truth(A):
 
   return [1, "Success", gram]
 
+if __name__ == "__main__":
+  A = np.array([[1, 1], [1, -1]])
 
-A = np.array([[1, 1], [1, -1]])
-
-gram = gram_truth(A)
-print(gram[0])
-print(gram[1])
-print(gram[2])
+  gram = gram_truth(A)
+  print(gram[0])
+  print(gram[1])
+  print(gram[2])
