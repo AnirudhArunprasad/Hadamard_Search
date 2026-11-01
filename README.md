@@ -33,3 +33,7 @@ For any matrix: M, if M*M^T is a diagonal matrix, M must be an orthogonal basis.
 We can take advantage of these properties to verify that a matrix is in fact Hadamard. 
 
 Thus, the first project I will be undertaking is to construct a Gram matrix accelerator. It's job is to compute M*M^T as fast as is possible. The job for this week is to work on the python golden model and spec for the accelerator, and in later weeks, I will translate that spec into sv. I'm going to pivot to sv from pure Verilog, since sv is the industry standard.
+
+# 10/31/26
+
+Happy Halloween Future self! The only things I have left on the roster is to create the spec, and to create the python testing suite. After the spec is created, I can begin working on the modules, and connecting them up together. V1 should be pretty simple in terms of scope. I'm going to make it basic. Then after that, the next step is pipelining and parallelizing. The spec is just there so I know exactly what to implement, and how. It also should show a history of my work.
