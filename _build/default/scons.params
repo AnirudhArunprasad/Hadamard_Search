@@ -1,4 +1,4 @@
-timestamp: "15125727915"
+timestamp: "02121133250"
 arch: ICE40
 fpga_info {
   fpga_id: "ice40up5k-sg48"
@@ -30,7 +30,7 @@ apio_env_params {
 }
 target {
   sim {
-    testbench_path: "hadamard_tb.v"
+    testbench_path: "test/dot_product_tb.sv"
     force_sim: false
     no_gtkwave: false
     detach_gtkwave: false

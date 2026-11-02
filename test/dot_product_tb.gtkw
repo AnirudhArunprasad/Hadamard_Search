@@ -1,0 +1,10 @@
+[*] GTKWave display configuration for 'apio sim test/dot_product_tb.sv'
+[*] THIS FILE WAS GENERATED AUTOMATICALLY BY APIO.
+[*] DO NOT EDIT IT MANUALLY!
+[*] To customize this file, run 'apio sim test/dot_product_tb.sv'
+[*] and save the file from GTKWave.
+
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+
+[*]
+moduleName.dot_product[3:0]

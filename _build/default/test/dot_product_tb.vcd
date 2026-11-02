@@ -1,0 +1,31 @@
+$date
+	Mon Nov 02 12:11:34 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module moduleName $end
+$var wire 4 ! dot_product [3:0] $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1000 !
+$end
+#10
+b0 !
+#30
+b10 !
+#40
+b0 !
+#50
+b1110 !
+#60
+b100 !
+#80
