@@ -16,7 +16,6 @@ dot
 module dot_product #(
   parameter int WIDTH = 8
 ) (
-  input wire clk,
   input wire [WIDTH-1:0] vector_a,
   input wire [WIDTH-1:0] vector_b,
   output reg signed [$clog2(WIDTH+1):0] dot_product

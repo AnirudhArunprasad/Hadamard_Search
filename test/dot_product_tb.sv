@@ -4,7 +4,6 @@ module moduleName;
 
   localparam WIDTH = 8;
 
-  reg clk;
   reg [WIDTH-1:0] vector_a;
   reg [WIDTH-1:0] vector_b;
 
@@ -13,20 +12,15 @@ module moduleName;
   dot_product #(
     .WIDTH(WIDTH)
   ) uut (
-    .clk(clk),
     .vector_a(vector_a),
     .vector_b(vector_b),
     .dot_product(dot_product)
   );
 
-  always #5 clk = ~clk;
-
   integer expected;
   
   initial begin
     $dumpvars(0, dot_product);
-
-    clk = 0;
 
     vector_a = 8'b00000000;
     vector_b = 8'b00000000;
@@ -70,7 +64,7 @@ module moduleName;
 
     vector_a = 8'b01111100;
     vector_b = 8'b00001111;
-    expected = -2; //16-2
+    expected = -2; 
     #10;
 
     $display("A=%b B=%b expected=%0d actual=%0d",
@@ -94,7 +88,7 @@ module moduleName;
 
     vector_a = 8'b11111111;
     vector_b = 8'b00000000;
-    expected = -8; //-8
+    expected = -8; 
     #10;
 
     $display("A=%b B=%b expected=%0d actual=%0d",
