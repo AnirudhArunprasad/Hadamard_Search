@@ -19,11 +19,11 @@ module dot_product #(
   input wire clk,
   input wire [WIDTH-1:0] vector_a,
   input wire [WIDTH-1:0] vector_b,
-  output reg [$clog2((2*WIDTH)-1):0] dot_product
+  output reg signed [$clog2(WIDTH+1):0] dot_product
 );
 
 reg [WIDTH-1:0] distance;
-reg [$clog2((2*WIDTH)-1):0] sum;
+reg [$clog2(WIDTH+1):0] sum;
 
 always_comb begin : hamming_dot_block
 
