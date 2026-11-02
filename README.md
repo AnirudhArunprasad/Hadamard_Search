@@ -37,3 +37,7 @@ Thus, the first project I will be undertaking is to construct a Gram matrix acce
 # 10/31/26
 
 Happy Halloween Future self! The only things I have left on the roster is to create the spec, and to create the python testing suite. After the spec is created, I can begin working on the modules, and connecting them up together. V1 should be pretty simple in terms of scope. I'm going to make it basic. Then after that, the next step is pipelining and parallelizing. The spec is just there so I know exactly what to implement, and how. It also should show a history of my work.
+
+# 11/2/26
+
+Today, I want to start working on implementing the actual gram accelerator in sv (finally). I already implemented the hamming distance module in Verilog, but to learn the sv functions, I'm going to rewrite it in SystemVerilog. I also want to make sure that it adds the actual magnitude calculation. I also want to start off making an FSMD, because I think pipelining will be a big thing for reducing the overall throughput as the matrices get a lot lot bigger.
