@@ -41,3 +41,7 @@ Happy Halloween Future self! The only things I have left on the roster is to cre
 # 11/2/26
 
 Today, I want to start working on implementing the actual gram accelerator in sv (finally). I already implemented the hamming distance module in Verilog, but to learn the sv functions, I'm going to rewrite it in SystemVerilog. I also want to make sure that it adds the actual magnitude calculation. I also want to start off making an FSMD, because I think pipelining will be a big thing for reducing the overall throughput as the matrices get a lot lot bigger.
+
+# 11/3/26
+
+Today, I want to take the time to understand and learn more about cocotb, and self checking testing, because automating testing would make life so so much easier (I don't like writing test benches very much). I also want to be able to start working on the actual Gram matrix operations.
