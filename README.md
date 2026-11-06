@@ -48,6 +48,14 @@ Today, I want to take the time to understand and learn more about cocotb, and se
 
 # 11/6/26
 
-After having the flu for a bit, I'm ready to start working on implementing the cocotb testbench, and the other parts of the Gram system. I will start with cocotb first, and then move into trying to sculpt out the whole system. It should just combine the dot product operation, which a state machine, and a register pipeline.
+I recently had a cold, meaning I had some time to think about what to focus on next. While the cocotb testbench might be useful, I think it would only become a real priority once the actual gram functionality is in place. That means that i think the highest value decision for me to make right now, is to focus on implementing the actual architecture of the controler and datapath.
+
+The main idea for the first iteration is to have one main controller which decides when to do what, and 1 main datapath, which allows input vectors to turn into a calculated set of dot products within the output.
+
+This only works because the operation A*A^T has a ton of mirrored operations making the output matrix symmetric across the top left corner to bottom right corner diagonal (it's also always square). Also, for any binary vector, the entire diagonal always has a dot product value of the number of vector elements (because they will always be the same).
+
+This means, for any matrix, the dot product operation is a simple pop count, and the number of those is about (n-1)(n-2)/2 because that is the sum from n-1 to 0, given that n is the order of the matrix.
+
+The Tang Nano has a 27MHz fixed oscillator, so assuming a it takes about 3.704 * 10^-8 seconds for one clock switch, meaning that even when n is in the order of the millions, these gram verifications should take less then 1 second. (of course depending on the pipelining, and any other clever tactics we use).
 
 
