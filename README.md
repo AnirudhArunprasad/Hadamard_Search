@@ -45,3 +45,9 @@ Today, I want to start working on implementing the actual gram accelerator in sv
 # 11/3/26
 
 Today, I want to take the time to understand and learn more about cocotb, and self checking testing, because automating testing would make life so so much easier (I don't like writing test benches very much). I also want to be able to start working on the actual Gram matrix operations.
+
+# 11/6/26
+
+After having the flu for a bit, I'm ready to start working on implementing the cocotb testbench, and the other parts of the Gram system. I will start with cocotb first, and then move into trying to sculpt out the whole system. It should just combine the dot product operation, which a state machine, and a register pipeline.
+
+
